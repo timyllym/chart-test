@@ -29,6 +29,8 @@
     "paper-item": "polymerelements/paper-item",
     "paper-icon-button": "polymerelements/paper-icon-button",
     "paper-material": "polymerelements/paper-material",
-    "font-roboto": "polymerelements/font-roboto"
+    "font-roboto": "polymerelements/font-roboto",
+    "d3": "3.5.0",
+    "c3": "0.4.11-rc4"
   }
 }
