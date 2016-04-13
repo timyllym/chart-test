@@ -15,13 +15,21 @@ html
     link(href="../bower_components/paper-input/paper-input.html" rel="import")
     link(href="../bower_components/iron-icons/iron-icons.html" rel="import")
     link(href="../bower_components/font-roboto/roboto.html" rel="import")
+    link(href="../bower_components/google-chart/google-chart.html" rel="import")
     
   dom-module#chart-test-app
-    style
-      include chart-test-app.css
     template
+      style
+        include chart-test-app.css
       paper-header-panel.flex.main-panel
         paper-toolbar
           div CHART TEST
-        div.content.fit CONTENT
+        div.content.fit
+          google-chart(
+            type='pie'
+            options='{"title": "Distribution of days in 2001Q1"}'
+            cols='[[ cols ]]'
+            rows='[[ rows ]]'
+            id="mychart"
+          )
   script(src="chart-test-app.js")

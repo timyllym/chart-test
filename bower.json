@@ -31,6 +31,9 @@
     "paper-material": "polymerelements/paper-material",
     "font-roboto": "polymerelements/font-roboto",
     "d3": "3.5.0",
-    "c3": "0.4.11-rc4"
+    "c3": "0.4.11-rc4",
+    "google-chart": "1.0.4",
+    "jquery": "2.2.0",
+    "socket.io-client": "1.4.5"
   }
 }

@@ -13,22 +13,29 @@
     <link href="../bower_components/paper-input/paper-input.html" rel="import">
     <link href="../bower_components/iron-icons/iron-icons.html" rel="import">
     <link href="../bower_components/font-roboto/roboto.html" rel="import">
+    <link href="../bower_components/google-chart/google-chart.html" rel="import">
   </head>
   <dom-module id="chart-test-app">
-    <style>:host {
+    <template>
+      <style>:host {
   font-family: Roboto;
 }
 .content {
-  height: 200px;
+  height: 100%;
+}
+#mychart {
+  height: 100%;
+  width: 100%;
 }
 
-    </style>
-    <template>
+      </style>
       <paper-header-panel class="flex main-panel">
         <paper-toolbar>
           <div>CHART TEST</div>
         </paper-toolbar>
-        <div class="content fit">CONTENT</div>
+        <div class="content fit">
+          <google-chart type="pie" options="{&quot;title&quot;: &quot;Distribution of days in 2001Q1&quot;}" cols="[[ cols ]]" rows="[[ rows ]]" id="mychart"></google-chart>
+        </div>
       </paper-header-panel>
     </template>
   </dom-module>
